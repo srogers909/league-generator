@@ -172,6 +172,11 @@ void main() {
         generatePersonalities: true,
         useRealisticPositions: true,
         domesticPlayerPercentage: 75,
+        useVariableSquadSizes: true,
+        minSquadSize: 18,
+        maxSquadSize: 32,
+        averageSquadSize: 25,
+        reputationInfluence: 0.6,
       );
       
       expect(playerGen.validatePlayerConfig(invalidConfig), isFalse);
