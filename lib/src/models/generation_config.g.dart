@@ -1,0 +1,143 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'generation_config.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+GenerationConfig _$GenerationConfigFromJson(Map<String, dynamic> json) =>
+    GenerationConfig(
+      country: Country.fromJson(json['country'] as Map<String, dynamic>),
+      leagueConfig:
+          LeagueConfig.fromJson(json['leagueConfig'] as Map<String, dynamic>),
+      teamConfig:
+          TeamConfig.fromJson(json['teamConfig'] as Map<String, dynamic>),
+      playerConfig:
+          PlayerConfig.fromJson(json['playerConfig'] as Map<String, dynamic>),
+      stadiumConfig:
+          StadiumConfig.fromJson(json['stadiumConfig'] as Map<String, dynamic>),
+      seed: (json['seed'] as num?)?.toInt(),
+    );
+
+Map<String, dynamic> _$GenerationConfigToJson(GenerationConfig instance) =>
+    <String, dynamic>{
+      'country': instance.country,
+      'leagueConfig': instance.leagueConfig,
+      'teamConfig': instance.teamConfig,
+      'playerConfig': instance.playerConfig,
+      'stadiumConfig': instance.stadiumConfig,
+      'seed': instance.seed,
+    };
+
+LeagueConfig _$LeagueConfigFromJson(Map<String, dynamic> json) => LeagueConfig(
+      divisions: (json['divisions'] as num).toInt(),
+      teamsPerDivision: (json['teamsPerDivision'] as num).toInt(),
+      generateCups: json['generateCups'] as bool,
+      nameFormat: json['nameFormat'] as String,
+      historicalYears: (json['historicalYears'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$LeagueConfigToJson(LeagueConfig instance) =>
+    <String, dynamic>{
+      'divisions': instance.divisions,
+      'teamsPerDivision': instance.teamsPerDivision,
+      'generateCups': instance.generateCups,
+      'nameFormat': instance.nameFormat,
+      'historicalYears': instance.historicalYears,
+    };
+
+TeamConfig _$TeamConfigFromJson(Map<String, dynamic> json) => TeamConfig(
+      useRealisticDistribution: json['useRealisticDistribution'] as bool,
+      minReputation: (json['minReputation'] as num).toInt(),
+      maxReputation: (json['maxReputation'] as num).toInt(),
+      generateHistory: json['generateHistory'] as bool,
+      useTraditionalNames: json['useTraditionalNames'] as bool,
+    );
+
+Map<String, dynamic> _$TeamConfigToJson(TeamConfig instance) =>
+    <String, dynamic>{
+      'useRealisticDistribution': instance.useRealisticDistribution,
+      'minReputation': instance.minReputation,
+      'maxReputation': instance.maxReputation,
+      'generateHistory': instance.generateHistory,
+      'useTraditionalNames': instance.useTraditionalNames,
+    };
+
+PlayerConfig _$PlayerConfigFromJson(Map<String, dynamic> json) => PlayerConfig(
+      ageDistribution: AgeDistribution.fromJson(
+          json['ageDistribution'] as Map<String, dynamic>),
+      skillDistribution: SkillDistribution.fromJson(
+          json['skillDistribution'] as Map<String, dynamic>),
+      generatePersonalities: json['generatePersonalities'] as bool,
+      useRealisticPositions: json['useRealisticPositions'] as bool,
+      domesticPlayerPercentage:
+          (json['domesticPlayerPercentage'] as num).toInt(),
+      useVariableSquadSizes: json['useVariableSquadSizes'] as bool,
+      minSquadSize: (json['minSquadSize'] as num).toInt(),
+      maxSquadSize: (json['maxSquadSize'] as num).toInt(),
+      averageSquadSize: (json['averageSquadSize'] as num).toInt(),
+      reputationInfluence: (json['reputationInfluence'] as num).toDouble(),
+    );
+
+Map<String, dynamic> _$PlayerConfigToJson(PlayerConfig instance) =>
+    <String, dynamic>{
+      'ageDistribution': instance.ageDistribution,
+      'skillDistribution': instance.skillDistribution,
+      'generatePersonalities': instance.generatePersonalities,
+      'useRealisticPositions': instance.useRealisticPositions,
+      'domesticPlayerPercentage': instance.domesticPlayerPercentage,
+      'useVariableSquadSizes': instance.useVariableSquadSizes,
+      'minSquadSize': instance.minSquadSize,
+      'maxSquadSize': instance.maxSquadSize,
+      'averageSquadSize': instance.averageSquadSize,
+      'reputationInfluence': instance.reputationInfluence,
+    };
+
+StadiumConfig _$StadiumConfigFromJson(Map<String, dynamic> json) =>
+    StadiumConfig(
+      minCapacity: (json['minCapacity'] as num).toInt(),
+      maxCapacity: (json['maxCapacity'] as num).toInt(),
+      useRealisticCapacities: json['useRealisticCapacities'] as bool,
+      generateHistory: json['generateHistory'] as bool,
+    );
+
+Map<String, dynamic> _$StadiumConfigToJson(StadiumConfig instance) =>
+    <String, dynamic>{
+      'minCapacity': instance.minCapacity,
+      'maxCapacity': instance.maxCapacity,
+      'useRealisticCapacities': instance.useRealisticCapacities,
+      'generateHistory': instance.generateHistory,
+    };
+
+AgeDistribution _$AgeDistributionFromJson(Map<String, dynamic> json) =>
+    AgeDistribution(
+      minAge: (json['minAge'] as num).toInt(),
+      maxAge: (json['maxAge'] as num).toInt(),
+      peakAge: (json['peakAge'] as num).toInt(),
+      standardDeviation: (json['standardDeviation'] as num).toDouble(),
+    );
+
+Map<String, dynamic> _$AgeDistributionToJson(AgeDistribution instance) =>
+    <String, dynamic>{
+      'minAge': instance.minAge,
+      'maxAge': instance.maxAge,
+      'peakAge': instance.peakAge,
+      'standardDeviation': instance.standardDeviation,
+    };
+
+SkillDistribution _$SkillDistributionFromJson(Map<String, dynamic> json) =>
+    SkillDistribution(
+      meanSkill: (json['meanSkill'] as num).toDouble(),
+      standardDeviation: (json['standardDeviation'] as num).toDouble(),
+      minSkill: (json['minSkill'] as num).toInt(),
+      maxSkill: (json['maxSkill'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$SkillDistributionToJson(SkillDistribution instance) =>
+    <String, dynamic>{
+      'meanSkill': instance.meanSkill,
+      'standardDeviation': instance.standardDeviation,
+      'minSkill': instance.minSkill,
+      'maxSkill': instance.maxSkill,
+    };

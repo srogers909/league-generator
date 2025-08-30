@@ -1,0 +1,30 @@
+name: soccer_data_generator
+description: A comprehensive data generation module for soccer simulation games
+version: 1.0.0
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies:
+  # Core dependencies for data generation
+  json_annotation: ^4.9.0
+  
+  # Local dependency on the engine module
+  soccer_engine:
+    path: ../engine
+
+dev_dependencies:
+  # Testing framework
+  test: ^1.24.0
+  
+  # Code generation tools
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+  
+  # Linting
+  lints: ^2.1.0
+
+# Override dependency to ensure compatibility
+dependency_overrides:
+  soccer_engine:
+    path: ../engine
