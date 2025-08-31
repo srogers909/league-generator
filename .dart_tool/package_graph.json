@@ -122,6 +122,14 @@
       ]
     },
     {
+      "name": "tactics_fc_utilities",
+      "version": "1.0.0+1",
+      "dependencies": [
+        "equatable",
+        "json_annotation"
+      ]
+    },
+    {
       "name": "uuid",
       "version": "4.5.1",
       "dependencies": [
@@ -129,14 +137,6 @@
         "fixnum",
         "meta",
         "sprintf"
-      ]
-    },
-    {
-      "name": "tactics_fc_utilities",
-      "version": "1.0.0+1",
-      "dependencies": [
-        "equatable",
-        "json_annotation"
       ]
     },
     {
