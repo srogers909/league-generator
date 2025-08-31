@@ -1,5 +1,5 @@
 /// A comprehensive data generation module for soccer simulation games
-library soccer_data_generator;
+library tactics_fc_generator;
 
 // Export models
 export 'src/models/country.dart';

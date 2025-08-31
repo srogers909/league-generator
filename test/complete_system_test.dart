@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:soccer_data_generator/soccer_data_generator.dart';
+import 'package:tactics_fc_generator/soccer_data_generator.dart';
 
 /// Final verification test demonstrating the complete variable squad size system
 void main() {

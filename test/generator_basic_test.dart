@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
-import 'package:soccer_data_generator/soccer_data_generator.dart';
-import 'package:soccer_engine/soccer_engine.dart';
+import 'package:tactics_fc_generator/soccer_data_generator.dart';
+import 'package:tactics_fc_engine/soccer_engine.dart';
 
 void main() {
   group('Soccer Data Generator Tests', () {

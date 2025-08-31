@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'package:soccer_engine/soccer_engine.dart';
+import 'package:tactics_fc_engine/soccer_engine.dart';
 import '../models/country.dart';
 import '../models/generation_config.dart';
 import 'team_generator.dart';

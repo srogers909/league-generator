@@ -1,4 +1,4 @@
-name: soccer_data_generator
+name: tactics_fc_generator
 description: A comprehensive data generation module for soccer simulation games
 version: 1.0.0
 
@@ -10,8 +10,8 @@ dependencies:
   json_annotation: ^4.9.0
   
   # Local dependency on the engine module
-  soccer_engine:
-    path: ../engine
+  tactics_fc_engine:
+    path: ../tactics-fc-engine
 
 dev_dependencies:
   # Testing framework
@@ -26,5 +26,5 @@ dev_dependencies:
 
 # Override dependency to ensure compatibility
 dependency_overrides:
-  soccer_engine:
-    path: ../engine
+  tactics_fc_engine:
+    path: ../tactics-fc-engine

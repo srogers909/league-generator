@@ -1,14 +1,14 @@
 {
   "roots": [
-    "soccer_data_generator"
+    "tactics_fc_generator"
   ],
   "packages": [
     {
-      "name": "soccer_data_generator",
+      "name": "tactics_fc_generator",
       "version": "1.0.0",
       "dependencies": [
         "json_annotation",
-        "soccer_engine"
+        "tactics_fc_engine"
       ],
       "devDependencies": [
         "build_runner",
@@ -18,12 +18,12 @@
       ]
     },
     {
-      "name": "soccer_engine",
+      "name": "tactics_fc_engine",
       "version": "1.0.0",
       "dependencies": [
         "equatable",
         "json_annotation",
-        "soccer_utilities",
+        "tactics_fc_utilities",
         "uuid"
       ]
     },
@@ -122,14 +122,6 @@
       ]
     },
     {
-      "name": "soccer_utilities",
-      "version": "1.0.0+1",
-      "dependencies": [
-        "equatable",
-        "json_annotation"
-      ]
-    },
-    {
       "name": "uuid",
       "version": "4.5.1",
       "dependencies": [
@@ -137,6 +129,14 @@
         "fixnum",
         "meta",
         "sprintf"
+      ]
+    },
+    {
+      "name": "tactics_fc_utilities",
+      "version": "1.0.0+1",
+      "dependencies": [
+        "equatable",
+        "json_annotation"
       ]
     },
     {
